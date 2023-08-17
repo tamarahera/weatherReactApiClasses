@@ -1,3 +1,27 @@
 .header {
-    
+    padding: 20px 50px;
+    background-color: var(--color-blue-dark);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__link {
+        color: var(--color-white);
+        border-bottom: 1px solid var(--color-blue-dark);
+        transition: 0.2s all;
+        &--active {
+            font-weight: 700;
+        }
+        &:hover {
+            border-color: var(--color-white);
+        }
+    }
 }
